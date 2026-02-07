@@ -1,0 +1,9 @@
+{
+  "PrinterName": "BlackCopper 80mm Series",
+  "OutputFilePath": "C:\\xampp\\htdocs\\pos-counter\\TJ.txt",
+  "ShopName": "ASIF SUPER STORE",
+  "CounterNo": 1,
+  "Address": "Branch #3, Wallace Market",
+  "Phone1": "0300-1234567",
+  "Phone2": "0312-7654321"
+}

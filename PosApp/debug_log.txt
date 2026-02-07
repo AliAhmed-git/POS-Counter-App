@@ -1,0 +1,793 @@
+[1/27/2026 1:41:36 PM] Migration success.
+[2/7/2026 5:55:27 PM] App Startup Initiated
+[2/7/2026 5:55:28 PM] Splash Screen Shown
+[2/7/2026 5:55:28 PM] Background Initialization Started
+[2/7/2026 5:55:28 PM] Settings Loaded
+[2/7/2026 5:58:12 PM] App Startup Initiated
+[2/7/2026 5:58:13 PM] Splash Screen Shown
+[2/7/2026 5:58:13 PM] Background Initialization Started
+[2/7/2026 5:58:13 PM] Settings Loaded
+[2/7/2026 6:06:07 PM] App Startup Initiated
+[2/7/2026 6:06:08 PM] Splash Screen Shown
+[2/7/2026 6:06:08 PM] Background Initialization Started
+[2/7/2026 6:06:08 PM] Settings Loaded
+[2/7/2026 6:06:08 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 6:06:08 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 6:06:09 PM] (DataService) DbContext created
+[2/7/2026 6:06:11 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 6:06:11 PM] (DataService) Seeding data check started
+[2/7/2026 6:06:11 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 6:06:11 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 6:12:19 PM] App Startup Initiated
+[2/7/2026 6:12:20 PM] Splash Screen Shown
+[2/7/2026 6:12:20 PM] Background Initialization Started
+[2/7/2026 6:12:20 PM] Settings Loaded
+[2/7/2026 6:12:20 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 6:12:20 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 6:12:21 PM] (DataService) DbContext created
+[2/7/2026 6:12:23 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 6:12:23 PM] (DataService) Seeding data check started
+[2/7/2026 6:12:23 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 6:12:23 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 6:12:24 PM] IsInitialized set to true
+[2/7/2026 6:12:26 PM] Splash delay completed, showing MainWindow
+[2/7/2026 6:12:26 PM] Resolving MainWindow
+[2/7/2026 6:12:26 PM] MainWindow resolved
+[2/7/2026 6:12:26 PM] Splash closed
+[2/7/2026 6:12:26 PM] MainWindow.Show() called
+[2/7/2026 6:29:29 PM] App Startup Initiated
+[2/7/2026 6:29:30 PM] Splash Screen Shown
+[2/7/2026 6:29:30 PM] Background Initialization Started
+[2/7/2026 6:29:30 PM] Settings Loaded
+[2/7/2026 6:29:30 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 6:29:30 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 6:29:31 PM] (DataService) DbContext created
+[2/7/2026 6:29:33 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 6:29:33 PM] (DataService) Seeding data check started
+[2/7/2026 6:29:33 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 6:29:33 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 6:29:33 PM] IsInitialized set to true
+[2/7/2026 6:29:35 PM] Splash delay completed, showing MainWindow
+[2/7/2026 6:29:35 PM] Resolving MainWindow
+[2/7/2026 6:29:36 PM] MainWindow resolved
+[2/7/2026 6:29:36 PM] Splash closed
+[2/7/2026 6:29:36 PM] MainWindow.Show() called
+[2/7/2026 6:39:10 PM] App Startup Initiated
+[2/7/2026 6:39:11 PM] Splash Screen Shown
+[2/7/2026 6:39:11 PM] Background Initialization Started
+[2/7/2026 6:39:11 PM] Settings Loaded
+[2/7/2026 6:39:11 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 6:39:11 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 6:39:11 PM] (DataService) DbContext created
+[2/7/2026 6:39:13 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 6:39:13 PM] (DataService) Seeding data check started
+[2/7/2026 6:39:13 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 6:39:13 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 6:39:13 PM] IsInitialized set to true
+[2/7/2026 6:39:15 PM] Splash delay completed, showing MainWindow
+[2/7/2026 6:39:15 PM] Resolving MainWindow
+[2/7/2026 6:39:16 PM] MainWindow resolved
+[2/7/2026 6:39:16 PM] Splash closed
+[2/7/2026 6:39:16 PM] MainWindow.Show() called
+[2/7/2026 7:43:39 PM] App Startup Initiated
+[2/7/2026 7:43:40 PM] Splash Screen Shown
+[2/7/2026 7:43:40 PM] Background Initialization Started
+[2/7/2026 7:43:40 PM] Settings Loaded
+[2/7/2026 7:43:41 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 7:43:41 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 7:43:41 PM] (DataService) DbContext created
+[2/7/2026 7:43:44 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 7:43:44 PM] (DataService) Seeding data check started
+[2/7/2026 7:43:44 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 7:43:44 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 7:43:44 PM] IsInitialized set to true
+[2/7/2026 7:43:46 PM] Splash delay completed, showing MainWindow
+[2/7/2026 7:43:46 PM] Resolving MainWindow
+[2/7/2026 7:43:47 PM] MainWindow resolved
+[2/7/2026 7:43:47 PM] Splash closed
+[2/7/2026 7:43:47 PM] MainWindow.Show() called
+[2/7/2026 8:08:08 PM] App Startup Initiated
+[2/7/2026 8:08:12 PM] Splash Screen Shown
+[2/7/2026 8:08:12 PM] Background Initialization Started
+[2/7/2026 8:08:13 PM] Settings Loaded
+[2/7/2026 8:08:13 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 8:08:13 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 8:08:14 PM] (DataService) DbContext created
+[2/7/2026 8:08:20 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 8:08:21 PM] (DataService) Seeding data check started
+[2/7/2026 8:08:22 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 8:08:22 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 8:08:22 PM] IsInitialized set to true
+[2/7/2026 8:08:24 PM] Splash delay completed, showing MainWindow
+[2/7/2026 8:08:24 PM] Resolving MainWindow
+[2/7/2026 8:08:25 PM] MainWindow resolved
+[2/7/2026 8:08:25 PM] Splash closed
+[2/7/2026 8:08:26 PM] MainWindow.Show() called
+[2/7/2026 8:17:41 PM] App Startup Initiated
+[2/7/2026 8:17:43 PM] Splash Screen Shown
+[2/7/2026 8:17:43 PM] Background Initialization Started
+[2/7/2026 8:17:44 PM] Settings Loaded
+[2/7/2026 8:17:44 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 8:17:44 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 8:17:44 PM] (DataService) DbContext created
+[2/7/2026 8:17:49 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 8:17:50 PM] (DataService) Seeding data check started
+[2/7/2026 8:17:51 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 8:17:51 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 8:17:51 PM] IsInitialized set to true
+[2/7/2026 8:17:53 PM] Splash delay completed, showing MainWindow
+[2/7/2026 8:17:53 PM] Resolving MainWindow
+[2/7/2026 8:17:53 PM] MainWindow resolved
+[2/7/2026 8:17:53 PM] Splash closed
+[2/7/2026 8:17:53 PM] MainWindow.Show() called
+[2/7/2026 8:24:39 PM] App Startup Initiated
+[2/7/2026 8:24:41 PM] Splash Screen Shown
+[2/7/2026 8:24:41 PM] Background Initialization Started
+[2/7/2026 8:24:41 PM] Settings Loaded
+[2/7/2026 8:24:41 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 8:24:42 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 8:24:42 PM] (DataService) DbContext created
+[2/7/2026 8:24:46 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 8:24:48 PM] (DataService) Seeding data check started
+[2/7/2026 8:24:48 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 8:24:48 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 8:24:48 PM] IsInitialized set to true
+[2/7/2026 8:24:50 PM] Splash delay completed, showing MainWindow
+[2/7/2026 8:24:50 PM] Resolving MainWindow
+[2/7/2026 8:24:51 PM] MainWindow resolved
+[2/7/2026 8:24:51 PM] Splash closed
+[2/7/2026 8:24:51 PM] MainWindow.Show() called
+[2/7/2026 8:52:17 PM] App Startup Initiated
+[2/7/2026 8:52:19 PM] Splash Screen Shown
+[2/7/2026 8:52:19 PM] Background Initialization Started
+[2/7/2026 8:52:19 PM] Settings Loaded
+[2/7/2026 8:52:19 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 8:52:19 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 8:52:19 PM] (DataService) DbContext created
+[2/7/2026 8:52:21 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 8:52:21 PM] (DataService) Seeding data check started
+[2/7/2026 8:52:21 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 8:52:21 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 8:52:21 PM] IsInitialized set to true
+[2/7/2026 8:52:23 PM] Splash delay completed, showing MainWindow
+[2/7/2026 8:52:23 PM] Resolving MainWindow
+[2/7/2026 8:52:24 PM] MainWindow resolved
+[2/7/2026 8:52:24 PM] Splash closed
+[2/7/2026 8:52:24 PM] MainWindow.Show() called
+[2/7/2026 9:50:26 PM] App Startup Initiated
+[2/7/2026 9:50:27 PM] Splash Screen Shown
+[2/7/2026 9:50:27 PM] Background Initialization Started
+[2/7/2026 9:50:27 PM] Settings Loaded
+[2/7/2026 9:50:27 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 9:50:27 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 9:50:27 PM] (DataService) DbContext created
+[2/7/2026 9:50:29 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 9:50:30 PM] (DataService) Seeding data check started
+[2/7/2026 9:50:30 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 9:50:30 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 9:50:30 PM] IsInitialized set to true
+[2/7/2026 9:50:32 PM] Splash delay completed, showing MainWindow
+[2/7/2026 9:50:32 PM] Resolving MainWindow
+[2/7/2026 9:50:32 PM] MainWindow resolved
+[2/7/2026 9:50:32 PM] Splash closed
+[2/7/2026 9:50:33 PM] MainWindow.Show() called
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:42 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:43 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:43 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:43 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 9:50:43 PM] CRASH (Dispatcher): A 'Binding' cannot be set on the 'Value' property of type 'DataTrigger'. A 'Binding' can only be set on a DependencyProperty of a DependencyObject.
+[2/7/2026 10:09:20 PM] App Startup Initiated
+[2/7/2026 10:09:21 PM] Splash Screen Shown
+[2/7/2026 10:09:21 PM] Background Initialization Started
+[2/7/2026 10:09:22 PM] Settings Loaded
+[2/7/2026 10:09:22 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 10:09:22 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 10:09:22 PM] (DataService) DbContext created
+[2/7/2026 10:09:24 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 10:11:01 PM] (DataService) DB Self-healing failed: SQLite Error 5: 'database is locked'.
+[2/7/2026 10:11:01 PM] (DataService) Seeding data check started
+[2/7/2026 10:11:01 PM] (DataService) Database initialization failed: SQLite Error 1: 'no such table: PaymentMethods'.. Enabling Demo Mode.
+[2/7/2026 10:11:01 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 10:11:01 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 10:11:01 PM] IsInitialized set to true
+[2/7/2026 10:11:03 PM] Splash delay completed, showing MainWindow
+[2/7/2026 10:11:03 PM] Resolving MainWindow
+[2/7/2026 10:11:03 PM] MainWindow resolved
+[2/7/2026 10:11:03 PM] Splash closed
+[2/7/2026 10:11:04 PM] MainWindow.Show() called
+[2/7/2026 10:15:20 PM] App Startup Initiated
+[2/7/2026 10:15:21 PM] Splash Screen Shown
+[2/7/2026 10:15:21 PM] Background Initialization Started
+[2/7/2026 10:15:21 PM] Settings Loaded
+[2/7/2026 10:15:21 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 10:15:21 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 10:15:22 PM] (DataService) DbContext created
+[2/7/2026 10:15:23 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 10:21:06 PM] App Startup Initiated
+[2/7/2026 10:21:07 PM] Splash Screen Shown
+[2/7/2026 10:21:07 PM] Background Initialization Started
+[2/7/2026 10:21:07 PM] Settings Loaded
+[2/7/2026 10:21:08 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 10:21:08 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 10:21:08 PM] (DataService) DbContext created
+[2/7/2026 10:21:10 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 10:26:39 PM] App Startup Initiated
+[2/7/2026 10:26:40 PM] Splash Screen Shown
+[2/7/2026 10:26:40 PM] Background Initialization Started
+[2/7/2026 10:26:40 PM] Settings Loaded
+[2/7/2026 10:26:40 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 10:26:40 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 10:26:40 PM] (DataService) DbContext created
+[2/7/2026 10:26:42 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 10:26:43 PM] (DataService) Self-healing started, opening connection
+[2/7/2026 10:26:43 PM] (DataService) Connection opened for self-healing
+[2/7/2026 10:26:43 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 10:28:19 PM] (DataService) DB Self-healing failed: SQLite Error 5: 'database is locked'.
+[2/7/2026 10:28:19 PM] (DataService) Seeding data check started
+[2/7/2026 10:28:19 PM] (DataService) Database initialization failed: SQLite Error 1: 'no such table: PaymentMethods'.. Enabling Demo Mode.
+[2/7/2026 10:28:19 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 10:28:19 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 10:28:19 PM] IsInitialized set to true
+[2/7/2026 10:28:21 PM] Splash delay completed, showing MainWindow
+[2/7/2026 10:28:21 PM] Resolving MainWindow
+[2/7/2026 10:28:22 PM] MainWindow resolved
+[2/7/2026 10:28:22 PM] Splash closed
+[2/7/2026 10:28:22 PM] MainWindow.Show() called
+[2/7/2026 10:46:29 PM] App Startup Initiated
+[2/7/2026 10:46:30 PM] Splash Screen Shown
+[2/7/2026 10:46:31 PM] Background Initialization Started
+[2/7/2026 10:46:31 PM] Settings Loaded
+[2/7/2026 10:46:31 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 10:46:31 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 10:46:33 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 10:46:33 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 10:46:34 PM] (DataService) Self-healing phase started
+[2/7/2026 10:46:34 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 10:46:34 PM] (DataService) Checking table_info for Items
+[2/7/2026 10:46:34 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 10:46:34 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 10:46:34 PM] (DataService) Creating PaymentMethods table
+[2/7/2026 10:48:41 PM] (DataService) Self-healing failed: SQLite Error 5: 'database is locked'.
+[2/7/2026 10:48:41 PM] (DataService) Seeding data check started
+[2/7/2026 10:48:42 PM] (DataService) Seed PaymentMethods failed: SQLite Error 1: 'no such table: PaymentMethods'.
+[2/7/2026 10:48:42 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 10:48:42 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 10:48:42 PM] IsInitialized set to true
+[2/7/2026 10:48:44 PM] Splash delay completed, showing MainWindow
+[2/7/2026 10:48:44 PM] Resolving MainWindow
+[2/7/2026 10:48:44 PM] MainWindow resolved
+[2/7/2026 10:48:44 PM] Splash closed
+[2/7/2026 10:48:44 PM] MainWindow.Show() called
+[2/7/2026 10:55:26 PM] App Startup Initiated
+[2/7/2026 10:55:27 PM] Splash Screen Shown
+[2/7/2026 10:55:27 PM] Background Initialization Started
+[2/7/2026 10:55:27 PM] Settings Loaded
+[2/7/2026 10:55:27 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 10:55:27 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 10:55:27 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 10:55:29 PM] (DataService) Database initialization critical failure: Connection string keyword 'busy timeout' is not supported. For a possible alternative, see https://go.microsoft.com/fwlink/?linkid=2142181..
+[2/7/2026 10:55:29 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 10:55:29 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 10:55:29 PM] IsInitialized set to true
+[2/7/2026 10:55:31 PM] Splash delay completed, showing MainWindow
+[2/7/2026 10:55:31 PM] Resolving MainWindow
+[2/7/2026 10:55:32 PM] MainWindow resolved
+[2/7/2026 10:55:32 PM] Splash closed
+[2/7/2026 10:55:32 PM] MainWindow.Show() called
+[2/7/2026 10:57:45 PM] App Startup Initiated
+[2/7/2026 10:57:46 PM] Splash Screen Shown
+[2/7/2026 10:57:46 PM] Background Initialization Started
+[2/7/2026 10:57:46 PM] Settings Loaded
+[2/7/2026 10:57:47 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 10:57:47 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 10:57:47 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 10:57:48 PM] (DataService) Database initialization critical failure: Connection string keyword 'busy timeout' is not supported. For a possible alternative, see https://go.microsoft.com/fwlink/?linkid=2142181..
+[2/7/2026 10:57:48 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 10:57:48 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 10:57:48 PM] IsInitialized set to true
+[2/7/2026 10:57:50 PM] Splash delay completed, showing MainWindow
+[2/7/2026 10:57:50 PM] Resolving MainWindow
+[2/7/2026 10:57:51 PM] MainWindow resolved
+[2/7/2026 10:57:51 PM] Splash closed
+[2/7/2026 10:57:52 PM] MainWindow.Show() called
+[2/7/2026 10:58:01 PM] (DataService) Database login failed: Connection string keyword 'busy timeout' is not supported. For a possible alternative, see https://go.microsoft.com/fwlink/?linkid=2142181.
+[2/7/2026 11:03:39 PM] App Startup Initiated
+[2/7/2026 11:03:40 PM] Splash Screen Shown
+[2/7/2026 11:03:40 PM] Background Initialization Started
+[2/7/2026 11:03:40 PM] Settings Loaded
+[2/7/2026 11:03:40 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 11:03:40 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 11:03:40 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 11:03:43 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 11:03:43 PM] (DataService) Self-healing phase started
+[2/7/2026 11:03:43 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 11:03:43 PM] (DataService) Checking table_info for Items
+[2/7/2026 11:03:43 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 11:03:43 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 11:03:43 PM] (DataService) Creating PaymentMethods table
+[2/7/2026 11:03:43 PM] (DataService) Checking table_info for Counters
+[2/7/2026 11:03:43 PM] (DataService) Seeding data check started
+[2/7/2026 11:03:44 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 11:03:44 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 11:03:44 PM] IsInitialized set to true
+[2/7/2026 11:03:46 PM] Splash delay completed, showing MainWindow
+[2/7/2026 11:03:46 PM] Resolving MainWindow
+[2/7/2026 11:03:46 PM] MainWindow resolved
+[2/7/2026 11:03:46 PM] Splash closed
+[2/7/2026 11:03:46 PM] MainWindow.Show() called
+[2/7/2026 11:13:35 PM] App Startup Initiated
+[2/7/2026 11:13:36 PM] Splash Screen Shown
+[2/7/2026 11:13:36 PM] Background Initialization Started
+[2/7/2026 11:13:36 PM] Settings Loaded
+[2/7/2026 11:13:36 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 11:13:36 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 11:13:37 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 11:13:38 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 11:13:39 PM] (DataService) Self-healing phase started
+[2/7/2026 11:13:39 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 11:13:39 PM] (DataService) Checking table_info for Items
+[2/7/2026 11:13:39 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 11:13:39 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 11:13:39 PM] (DataService) Checking table_info for Counters
+[2/7/2026 11:13:39 PM] (DataService) Seeding data check started
+[2/7/2026 11:13:39 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 11:13:39 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 11:13:39 PM] IsInitialized set to true
+[2/7/2026 11:13:41 PM] Splash delay completed, showing MainWindow
+[2/7/2026 11:13:41 PM] Resolving MainWindow
+[2/7/2026 11:13:42 PM] MainWindow resolved
+[2/7/2026 11:13:42 PM] Splash closed
+[2/7/2026 11:13:42 PM] MainWindow.Show() called
+[2/7/2026 11:19:12 PM] App Startup Initiated
+[2/7/2026 11:19:13 PM] Splash Screen Shown
+[2/7/2026 11:19:13 PM] Background Initialization Started
+[2/7/2026 11:19:13 PM] Settings Loaded
+[2/7/2026 11:19:13 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 11:19:13 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 11:19:13 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 11:19:15 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 11:19:16 PM] (DataService) Self-healing phase started
+[2/7/2026 11:19:16 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 11:19:16 PM] (DataService) Checking table_info for Items
+[2/7/2026 11:19:16 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 11:19:16 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 11:19:16 PM] (DataService) Checking table_info for Counters
+[2/7/2026 11:19:16 PM] (DataService) Seeding data check started
+[2/7/2026 11:19:16 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 11:19:16 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 11:19:16 PM] IsInitialized set to true
+[2/7/2026 11:19:18 PM] Splash delay completed, showing MainWindow
+[2/7/2026 11:19:18 PM] Resolving MainWindow
+[2/7/2026 11:19:18 PM] MainWindow resolved
+[2/7/2026 11:19:18 PM] Splash closed
+[2/7/2026 11:19:19 PM] MainWindow.Show() called
+[2/7/2026 11:30:21 PM] App Startup Initiated
+[2/7/2026 11:30:21 PM] Splash Screen Shown
+[2/7/2026 11:30:21 PM] Background Initialization Started
+[2/7/2026 11:30:22 PM] Settings Loaded
+[2/7/2026 11:30:22 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 11:30:22 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 11:30:22 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 11:30:24 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 11:30:24 PM] (DataService) Self-healing phase started
+[2/7/2026 11:30:24 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 11:30:24 PM] (DataService) Checking table_info for Items
+[2/7/2026 11:30:24 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 11:30:24 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 11:30:24 PM] (DataService) Checking table_info for Counters
+[2/7/2026 11:30:24 PM] (DataService) Seeding data check started
+[2/7/2026 11:30:24 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 11:30:24 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 11:30:24 PM] IsInitialized set to true
+[2/7/2026 11:30:26 PM] Splash delay completed, showing MainWindow
+[2/7/2026 11:30:26 PM] Resolving MainWindow
+[2/7/2026 11:30:27 PM] MainWindow resolved
+[2/7/2026 11:30:27 PM] Splash closed
+[2/7/2026 11:30:27 PM] MainWindow.Show() called
+[2/7/2026 11:33:56 PM] App Startup Initiated
+[2/7/2026 11:33:58 PM] Splash Screen Shown
+[2/7/2026 11:33:58 PM] Background Initialization Started
+[2/7/2026 11:33:58 PM] Settings Loaded
+[2/7/2026 11:33:58 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 11:33:58 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 11:33:58 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 11:34:00 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 11:34:01 PM] (DataService) Self-healing phase started
+[2/7/2026 11:34:01 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 11:34:01 PM] (DataService) Checking table_info for Items
+[2/7/2026 11:34:01 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 11:34:01 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 11:34:01 PM] (DataService) Checking table_info for Counters
+[2/7/2026 11:34:01 PM] (DataService) Seeding data check started
+[2/7/2026 11:34:01 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 11:34:01 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 11:34:01 PM] IsInitialized set to true
+[2/7/2026 11:34:03 PM] Splash delay completed, showing MainWindow
+[2/7/2026 11:34:03 PM] Resolving MainWindow
+[2/7/2026 11:34:03 PM] MainWindow resolved
+[2/7/2026 11:34:04 PM] Splash closed
+[2/7/2026 11:34:04 PM] MainWindow.Show() called
+[2/7/2026 11:38:52 PM] App Startup Initiated
+[2/7/2026 11:38:53 PM] Splash Screen Shown
+[2/7/2026 11:38:53 PM] Background Initialization Started
+[2/7/2026 11:38:53 PM] Settings Loaded
+[2/7/2026 11:38:53 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 11:38:53 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 11:38:53 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 11:38:55 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 11:38:55 PM] (DataService) Self-healing phase started
+[2/7/2026 11:38:55 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 11:38:55 PM] (DataService) Checking table_info for Items
+[2/7/2026 11:38:55 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 11:38:55 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 11:38:55 PM] (DataService) Checking table_info for Counters
+[2/7/2026 11:38:55 PM] (DataService) Seeding data check started
+[2/7/2026 11:38:56 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 11:38:56 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 11:38:56 PM] IsInitialized set to true
+[2/7/2026 11:38:58 PM] Splash delay completed, showing MainWindow
+[2/7/2026 11:38:58 PM] Resolving MainWindow
+[2/7/2026 11:38:58 PM] MainWindow resolved
+[2/7/2026 11:38:58 PM] Splash closed
+[2/7/2026 11:38:59 PM] MainWindow.Show() called
+[2/7/2026 11:50:48 PM] App Startup Initiated
+[2/7/2026 11:50:49 PM] Splash Screen Shown
+[2/7/2026 11:50:50 PM] Background Initialization Started
+[2/7/2026 11:50:50 PM] Settings Loaded
+[2/7/2026 11:50:50 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 11:50:50 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 11:50:50 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 11:50:52 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 11:50:52 PM] (DataService) Self-healing phase started
+[2/7/2026 11:50:52 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 11:50:52 PM] (DataService) Checking table_info for Items
+[2/7/2026 11:50:52 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 11:50:52 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 11:50:52 PM] (DataService) Checking table_info for Counters
+[2/7/2026 11:50:52 PM] (DataService) Seeding data check started
+[2/7/2026 11:50:53 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 11:50:53 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 11:50:53 PM] IsInitialized set to true
+[2/7/2026 11:50:55 PM] Splash delay completed, showing MainWindow
+[2/7/2026 11:50:55 PM] Resolving MainWindow
+[2/7/2026 11:50:55 PM] MainWindow resolved
+[2/7/2026 11:50:55 PM] Splash closed
+[2/7/2026 11:50:56 PM] MainWindow.Show() called
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:02 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:03 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:03 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:51:03 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:53:45 PM] App Startup Initiated
+[2/7/2026 11:53:46 PM] Splash Screen Shown
+[2/7/2026 11:53:47 PM] Background Initialization Started
+[2/7/2026 11:53:47 PM] Settings Loaded
+[2/7/2026 11:53:47 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 11:53:47 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 11:53:47 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 11:53:49 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 11:53:49 PM] (DataService) Self-healing phase started
+[2/7/2026 11:53:49 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 11:53:49 PM] (DataService) Checking table_info for Items
+[2/7/2026 11:53:49 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 11:53:49 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 11:53:49 PM] (DataService) Checking table_info for Counters
+[2/7/2026 11:53:49 PM] (DataService) Seeding data check started
+[2/7/2026 11:53:50 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 11:53:50 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 11:53:50 PM] IsInitialized set to true
+[2/7/2026 11:53:52 PM] Splash delay completed, showing MainWindow
+[2/7/2026 11:53:52 PM] Resolving MainWindow
+[2/7/2026 11:53:52 PM] MainWindow resolved
+[2/7/2026 11:53:52 PM] Splash closed
+[2/7/2026 11:53:53 PM] MainWindow.Show() called
+[2/7/2026 11:54:39 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:39 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:39 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:39 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:39 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:39 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:54:40 PM] CRASH (Dispatcher): 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '410' and line position '94'.
+[2/7/2026 11:56:54 PM] App Startup Initiated
+[2/7/2026 11:56:55 PM] Splash Screen Shown
+[2/7/2026 11:56:55 PM] Background Initialization Started
+[2/7/2026 11:56:55 PM] Settings Loaded
+[2/7/2026 11:56:55 PM] Calling EnsureDatabaseCreatedAsync
+[2/7/2026 11:56:55 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 11:56:56 PM] (DataService) Running EnsureCreatedAsync
+[2/7/2026 11:56:58 PM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/7/2026 11:56:58 PM] (DataService) Self-healing phase started
+[2/7/2026 11:56:58 PM] (DataService) Checking table_info for SalesDetails
+[2/7/2026 11:56:58 PM] (DataService) Checking table_info for Items
+[2/7/2026 11:56:58 PM] (DataService) Checking table_info for SalesHeads
+[2/7/2026 11:56:58 PM] (DataService) Checking PaymentMethods table existence
+[2/7/2026 11:56:58 PM] (DataService) Checking table_info for Counters
+[2/7/2026 11:56:58 PM] (DataService) Seeding data check started
+[2/7/2026 11:56:59 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 11:56:59 PM] EnsureDatabaseCreatedAsync returned
+[2/7/2026 11:56:59 PM] IsInitialized set to true
+[2/7/2026 11:57:01 PM] Splash delay completed, showing MainWindow
+[2/7/2026 11:57:01 PM] Resolving MainWindow
+[2/7/2026 11:57:01 PM] MainWindow resolved
+[2/7/2026 11:57:01 PM] Splash closed
+[2/7/2026 11:57:02 PM] MainWindow.Show() called
+[2/8/2026 12:04:12 AM] App Startup Initiated
+[2/8/2026 12:04:13 AM] Splash Screen Shown
+[2/8/2026 12:04:13 AM] Background Initialization Started
+[2/8/2026 12:04:13 AM] Settings Loaded
+[2/8/2026 12:04:13 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 12:04:13 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 12:04:13 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 12:04:15 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 12:04:15 AM] (DataService) Self-healing phase started
+[2/8/2026 12:04:15 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 12:04:15 AM] (DataService) Checking table_info for Items
+[2/8/2026 12:04:15 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 12:04:15 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 12:04:15 AM] (DataService) Checking table_info for Counters
+[2/8/2026 12:04:15 AM] (DataService) Seeding data check started
+[2/8/2026 12:04:16 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 12:04:16 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 12:04:16 AM] IsInitialized set to true
+[2/8/2026 12:04:18 AM] Splash delay completed, showing MainWindow
+[2/8/2026 12:04:18 AM] Resolving MainWindow
+[2/8/2026 12:04:18 AM] MainWindow resolved
+[2/8/2026 12:04:18 AM] Splash closed
+[2/8/2026 12:04:19 AM] MainWindow.Show() called
+[2/8/2026 12:08:59 AM] App Startup Initiated
+[2/8/2026 12:09:00 AM] Splash Screen Shown
+[2/8/2026 12:09:00 AM] Background Initialization Started
+[2/8/2026 12:09:00 AM] Settings Loaded
+[2/8/2026 12:09:00 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 12:09:00 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 12:09:00 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 12:09:02 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 12:09:03 AM] (DataService) Self-healing phase started
+[2/8/2026 12:09:03 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 12:09:03 AM] (DataService) Checking table_info for Items
+[2/8/2026 12:09:03 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 12:09:03 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 12:09:03 AM] (DataService) Checking table_info for Counters
+[2/8/2026 12:09:03 AM] (DataService) Seeding data check started
+[2/8/2026 12:09:03 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 12:09:03 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 12:09:03 AM] IsInitialized set to true
+[2/8/2026 12:09:05 AM] Splash delay completed, showing MainWindow
+[2/8/2026 12:09:05 AM] Resolving MainWindow
+[2/8/2026 12:09:06 AM] MainWindow resolved
+[2/8/2026 12:09:06 AM] Splash closed
+[2/8/2026 12:09:06 AM] MainWindow.Show() called
+[2/8/2026 12:11:55 AM] App Startup Initiated
+[2/8/2026 12:11:57 AM] Splash Screen Shown
+[2/8/2026 12:11:57 AM] Background Initialization Started
+[2/8/2026 12:11:57 AM] Settings Loaded
+[2/8/2026 12:11:57 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 12:11:57 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 12:11:58 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 12:12:04 AM] App Startup Initiated
+[2/8/2026 12:12:05 AM] Splash Screen Shown
+[2/8/2026 12:12:05 AM] Background Initialization Started
+[2/8/2026 12:12:06 AM] Settings Loaded
+[2/8/2026 12:12:06 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 12:12:06 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 12:12:06 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 12:12:08 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 12:12:08 AM] (DataService) Self-healing phase started
+[2/8/2026 12:12:08 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 12:12:08 AM] (DataService) Checking table_info for Items
+[2/8/2026 12:12:08 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 12:12:08 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 12:12:08 AM] (DataService) Checking table_info for Counters
+[2/8/2026 12:12:08 AM] (DataService) Seeding data check started
+[2/8/2026 12:12:09 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 12:12:09 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 12:12:09 AM] IsInitialized set to true
+[2/8/2026 12:12:11 AM] Splash delay completed, showing MainWindow
+[2/8/2026 12:12:11 AM] Resolving MainWindow
+[2/8/2026 12:12:11 AM] MainWindow resolved
+[2/8/2026 12:12:12 AM] Splash closed
+[2/8/2026 12:12:12 AM] MainWindow.Show() called
+[2/8/2026 12:18:31 AM] App Startup Initiated
+[2/8/2026 12:18:32 AM] Splash Screen Shown
+[2/8/2026 12:18:32 AM] Background Initialization Started
+[2/8/2026 12:18:32 AM] Settings Loaded
+[2/8/2026 12:18:33 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 12:18:33 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 12:18:33 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 12:18:35 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 12:18:35 AM] (DataService) Self-healing phase started
+[2/8/2026 12:18:35 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 12:18:35 AM] (DataService) Checking table_info for Items
+[2/8/2026 12:18:35 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 12:18:35 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 12:18:35 AM] (DataService) Checking table_info for Counters
+[2/8/2026 12:18:35 AM] (DataService) Seeding data check started
+[2/8/2026 12:18:36 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 12:18:36 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 12:18:36 AM] IsInitialized set to true
+[2/8/2026 12:18:38 AM] Splash delay completed, showing MainWindow
+[2/8/2026 12:18:38 AM] Resolving MainWindow
+[2/8/2026 12:18:38 AM] MainWindow resolved
+[2/8/2026 12:18:38 AM] Splash closed
+[2/8/2026 12:18:38 AM] MainWindow.Show() called
+[2/8/2026 12:32:37 AM] App Startup Initiated
+[2/8/2026 12:32:38 AM] Splash Screen Shown
+[2/8/2026 12:32:38 AM] Background Initialization Started
+[2/8/2026 12:32:38 AM] Settings Loaded
+[2/8/2026 12:32:39 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 12:32:39 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 12:32:39 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 12:32:41 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 12:32:41 AM] (DataService) Self-healing phase started
+[2/8/2026 12:32:41 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 12:32:41 AM] (DataService) Checking table_info for Items
+[2/8/2026 12:32:41 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 12:32:41 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 12:32:41 AM] (DataService) Checking table_info for Counters
+[2/8/2026 12:32:41 AM] (DataService) Seeding data check started
+[2/8/2026 12:32:42 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 12:32:42 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 12:32:42 AM] IsInitialized set to true
+[2/8/2026 12:32:44 AM] Splash delay completed, showing MainWindow
+[2/8/2026 12:32:44 AM] Resolving MainWindow
+[2/8/2026 12:32:44 AM] MainWindow resolved
+[2/8/2026 12:32:44 AM] Splash closed
+[2/8/2026 12:32:44 AM] MainWindow.Show() called
+[2/8/2026 12:41:59 AM] App Startup Initiated
+[2/8/2026 12:42:00 AM] Splash Screen Shown
+[2/8/2026 12:42:00 AM] Background Initialization Started
+[2/8/2026 12:42:00 AM] Settings Loaded
+[2/8/2026 12:42:00 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 12:42:00 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 12:42:00 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 12:42:02 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 12:42:03 AM] (DataService) Self-healing phase started
+[2/8/2026 12:42:03 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 12:42:03 AM] (DataService) Checking table_info for Items
+[2/8/2026 12:42:03 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 12:42:03 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 12:42:03 AM] (DataService) Checking table_info for Counters
+[2/8/2026 12:42:03 AM] (DataService) Seeding data check started
+[2/8/2026 12:42:03 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 12:42:03 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 12:42:03 AM] IsInitialized set to true
+[2/8/2026 12:42:05 AM] Splash delay completed, showing MainWindow
+[2/8/2026 12:42:05 AM] Resolving MainWindow
+[2/8/2026 12:42:06 AM] MainWindow resolved
+[2/8/2026 12:42:06 AM] Splash closed
+[2/8/2026 12:42:06 AM] MainWindow.Show() called
+[2/8/2026 12:57:55 AM] App Startup Initiated
+[2/8/2026 12:57:56 AM] Splash Screen Shown
+[2/8/2026 12:57:56 AM] Background Initialization Started
+[2/8/2026 12:57:56 AM] Settings Loaded
+[2/8/2026 12:57:56 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 12:57:56 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 12:57:57 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 12:57:58 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 12:57:59 AM] (DataService) Self-healing phase started
+[2/8/2026 12:57:59 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 12:57:59 AM] (DataService) Checking table_info for Items
+[2/8/2026 12:57:59 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 12:57:59 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 12:57:59 AM] (DataService) Checking table_info for Counters
+[2/8/2026 12:57:59 AM] (DataService) Seeding data check started
+[2/8/2026 12:58:00 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 12:58:00 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 12:58:00 AM] IsInitialized set to true
+[2/8/2026 12:58:02 AM] Splash delay completed, showing MainWindow
+[2/8/2026 12:58:02 AM] Resolving MainWindow
+[2/8/2026 12:58:02 AM] MainWindow resolved
+[2/8/2026 12:58:02 AM] Splash closed
+[2/8/2026 12:58:02 AM] MainWindow.Show() called
+[2/8/2026 1:10:05 AM] App Startup Initiated
+[2/8/2026 1:10:06 AM] Splash Screen Shown
+[2/8/2026 1:10:06 AM] Background Initialization Started
+[2/8/2026 1:10:06 AM] Settings Loaded
+[2/8/2026 1:10:07 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 1:10:07 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 1:10:07 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 1:10:08 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 1:10:09 AM] (DataService) Self-healing phase started
+[2/8/2026 1:10:09 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 1:10:09 AM] (DataService) Checking table_info for Items
+[2/8/2026 1:10:09 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 1:10:09 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 1:10:09 AM] (DataService) Checking table_info for Counters
+[2/8/2026 1:10:09 AM] (DataService) Seeding data check started
+[2/8/2026 1:10:10 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 1:10:10 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 1:10:10 AM] IsInitialized set to true
+[2/8/2026 1:10:12 AM] Splash delay completed, showing MainWindow
+[2/8/2026 1:10:12 AM] Resolving MainWindow
+[2/8/2026 1:10:12 AM] MainWindow resolved
+[2/8/2026 1:10:12 AM] Splash closed
+[2/8/2026 1:10:12 AM] MainWindow.Show() called
+[2/8/2026 1:18:15 AM] App Startup Initiated
+[2/8/2026 1:18:16 AM] Splash Screen Shown
+[2/8/2026 1:18:16 AM] Background Initialization Started
+[2/8/2026 1:18:16 AM] Settings Loaded
+[2/8/2026 1:18:16 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 1:18:16 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 1:18:17 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 1:18:18 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 1:18:19 AM] (DataService) Self-healing phase started
+[2/8/2026 1:18:19 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 1:18:19 AM] (DataService) Checking table_info for Items
+[2/8/2026 1:18:19 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 1:18:19 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 1:18:19 AM] (DataService) Checking table_info for Counters
+[2/8/2026 1:18:19 AM] (DataService) Seeding data check started
+[2/8/2026 1:18:20 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 1:18:20 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 1:18:20 AM] IsInitialized set to true
+[2/8/2026 1:18:22 AM] Splash delay completed, showing MainWindow
+[2/8/2026 1:18:22 AM] Resolving MainWindow
+[2/8/2026 1:18:22 AM] MainWindow resolved
+[2/8/2026 1:18:22 AM] Splash closed
+[2/8/2026 1:18:22 AM] MainWindow.Show() called
+[2/8/2026 1:24:10 AM] App Startup Initiated
+[2/8/2026 1:24:11 AM] Splash Screen Shown
+[2/8/2026 1:24:11 AM] Background Initialization Started
+[2/8/2026 1:24:11 AM] Settings Loaded
+[2/8/2026 1:24:11 AM] Calling EnsureDatabaseCreatedAsync
+[2/8/2026 1:24:11 AM] (DataService) EnsureDatabaseCreatedAsync started
+[2/8/2026 1:24:11 AM] (DataService) Running EnsureCreatedAsync
+[2/8/2026 1:24:13 AM] (DataService) EnsureCreatedAsync checked/ran (created=False)
+[2/8/2026 1:24:14 AM] (DataService) Self-healing phase started
+[2/8/2026 1:24:14 AM] (DataService) Checking table_info for SalesDetails
+[2/8/2026 1:24:14 AM] (DataService) Checking table_info for Items
+[2/8/2026 1:24:14 AM] (DataService) Checking table_info for SalesHeads
+[2/8/2026 1:24:14 AM] (DataService) Checking PaymentMethods table existence
+[2/8/2026 1:24:14 AM] (DataService) Checking table_info for Counters
+[2/8/2026 1:24:14 AM] (DataService) Seeding data check started
+[2/8/2026 1:24:14 AM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/8/2026 1:24:14 AM] EnsureDatabaseCreatedAsync returned
+[2/8/2026 1:24:14 AM] IsInitialized set to true
+[2/8/2026 1:24:16 AM] Splash delay completed, showing MainWindow
+[2/8/2026 1:24:16 AM] Resolving MainWindow
+[2/8/2026 1:24:17 AM] MainWindow resolved
+[2/8/2026 1:24:17 AM] Splash closed
+[2/8/2026 1:24:17 AM] MainWindow.Show() called

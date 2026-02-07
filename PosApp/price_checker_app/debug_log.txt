@@ -1,0 +1,30 @@
+[2/7/2026 7:39:19 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 7:39:19 PM] (DataService) DbContext created
+[2/7/2026 7:39:21 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 7:39:22 PM] (DataService) Seeding data check started
+[2/7/2026 7:39:22 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 7:41:20 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 7:41:20 PM] (DataService) DbContext created
+[2/7/2026 7:41:22 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 7:41:23 PM] (DataService) Seeding data check started
+[2/7/2026 7:41:23 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 7:42:25 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 7:42:25 PM] (DataService) DbContext created
+[2/7/2026 7:42:27 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 7:42:27 PM] (DataService) Seeding data check started
+[2/7/2026 7:42:27 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 8:43:29 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 8:43:29 PM] (DataService) DbContext created
+[2/7/2026 8:43:31 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 8:43:32 PM] (DataService) Seeding data check started
+[2/7/2026 8:43:32 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 8:51:37 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 8:51:37 PM] (DataService) DbContext created
+[2/7/2026 8:51:39 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 8:51:40 PM] (DataService) Seeding data check started
+[2/7/2026 8:51:40 PM] (DataService) EnsureDatabaseCreatedAsync finished
+[2/7/2026 8:51:55 PM] (DataService) EnsureDatabaseCreatedAsync started
+[2/7/2026 8:51:56 PM] (DataService) DbContext created
+[2/7/2026 8:51:57 PM] (DataService) EnsureCreatedAsync checked/ran
+[2/7/2026 8:51:58 PM] (DataService) Seeding data check started
+[2/7/2026 8:51:58 PM] (DataService) EnsureDatabaseCreatedAsync finished
