@@ -1,0 +1,396 @@
+<UserControl x:Class="PosApp.Desktop.Views.ReceiptTemplate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PosApp.Desktop.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="850" d:DesignWidth="270"
+             Width="270" Background="White" FontFamily="Arial"
+             TextOptions.TextFormattingMode="Display"
+             TextOptions.TextRenderingMode="ClearType">
+    
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontSize" Value="9"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+        </Style>
+        <Style x:Key="LabelStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="9"/>
+        </Style>
+        <Style x:Key="ValueStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="9"/>
+        </Style>
+        <local:ItemIndexConverter x:Key="ItemIndexConverter"/>
+        <local:DiscountVisibilityConverter x:Key="DiscountVisibilityConverter"/>
+        <local:StringVisibilityConverter x:Key="StringVisibilityConverter"/>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </UserControl.Resources>
+    
+    <Grid Margin="8,10">
+        <StackPanel>
+            <!-- Logo area -->
+            <Image Source="pack://application:,,,/Assets/logo.jpg" Height="100" Margin="0,5" Stretch="Uniform" HorizontalAlignment="Center"/>
+            
+            <!-- Return Header -->
+            <Border Background="Black" Margin="0,5" Visibility="{Binding IsRefund, RelativeSource={RelativeSource AncestorType=UserControl}, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <TextBlock Text="REFUND RECEIPT" Foreground="White" FontSize="24" FontWeight="Black" HorizontalAlignment="Center" Margin="10,5"/>
+            </Border>
+            
+            <!-- Store Info -->
+            <StackPanel HorizontalAlignment="Center" Margin="0,0,0,5">
+                <TextBlock Text="{Binding ShopName, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                           FontSize="14" FontWeight="Black" HorizontalAlignment="Center" Margin="0,2"/>
+                
+                <TextBlock Text="{Binding Address, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                           Visibility="{Binding Address, RelativeSource={RelativeSource AncestorType=UserControl}, Converter={StaticResource StringVisibilityConverter}}"
+                           FontSize="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap"/>
+                
+                <TextBlock Text="{Binding Phone, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                           Visibility="{Binding Phone, RelativeSource={RelativeSource AncestorType=UserControl}, Converter={StaticResource StringVisibilityConverter}}"
+                           FontSize="10" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center" Margin="0,2,0,0"/>
+
+                <!-- Fallback if empty (Optional, but user said "no address", which implies they EXPECT it. If empty, maybe show nothing or placeholder?) -->
+            </StackPanel>
+
+            <TextBlock Text="STATIONARY • GROCERY • COSMETICS • GIFTS • TOYS • APPAREL • ELECTRONICS • HOUSEHOLD • BAKERY • BABY CARE" 
+                       HorizontalAlignment="Center" TextAlignment="Center"
+                       FontSize="10" 
+                       TextWrapping="Wrap"
+                       Margin="0,5,0,5"/>
+            <Rectangle Height="1" Fill="Black" StrokeDashArray="2 2" SnapsToDevicePixels="True" Margin="0,5"/>
+
+            <!-- Metadata Section -->
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Date:" Style="{StaticResource LabelStyle}"/>
+                <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+                    <TextBlock Text="{Binding Date, StringFormat='dd/MM/yy'}" Style="{StaticResource ValueStyle}" Margin="4,0,0,0"/>
+                    <TextBlock Text="{Binding Time, RelativeSource={RelativeSource AncestorType=UserControl}}" Style="{StaticResource ValueStyle}" Margin="5,0,0,0" FontWeight="Bold"/>
+                </StackPanel>
+                
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="Bill#:" Style="{StaticResource LabelStyle}"/>
+                <TextBlock Grid.Row="0" Grid.Column="3" Text="{Binding InvoiceNo}" Style="{StaticResource ValueStyle}" FontWeight="Bold" Margin="4,0"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Counter:" Style="{StaticResource LabelStyle}"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding CounterNo, StringFormat='D2'}" Style="{StaticResource ValueStyle}" Margin="4,0"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="2" Text="Customer:" Style="{StaticResource LabelStyle}"/>
+                <TextBlock Grid.Row="1" Grid.Column="3" Text="{Binding CustomerName}" Style="{StaticResource ValueStyle}" Margin="4,0"/>
+            </Grid>
+
+            <!-- Table Section -->
+            <StackPanel Margin="0,12">
+                <Border BorderBrush="Black" BorderThickness="0,1.5,0,1.5" Padding="0,4" Margin="0,0,0,6">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10"/> <!-- # -->
+                            <ColumnDefinition Width="*"/>  <!-- ITEM -->
+                            <ColumnDefinition Width="35"/> <!-- PKT -->
+                            <ColumnDefinition Width="15"/> <!-- QTY -->
+                            <ColumnDefinition Width="32"/> <!-- RATE -->
+                            <ColumnDefinition Width="28"/> <!-- GST -->
+                            <ColumnDefinition Width="22"/> <!-- DIS -->
+                            <ColumnDefinition Width="42"/> <!-- TOTAL -->
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="#" Style="{StaticResource LabelStyle}"/>
+                        <TextBlock Grid.Column="1" Text="ITEM" Style="{StaticResource LabelStyle}"/>
+                        <TextBlock Grid.Column="2" Text="PKT" Style="{StaticResource LabelStyle}" HorizontalAlignment="Center"/>
+                        <TextBlock Grid.Column="3" Text="Q" Style="{StaticResource LabelStyle}" HorizontalAlignment="Center"/>
+                        <TextBlock Grid.Column="4" Text="RATE" Style="{StaticResource LabelStyle}" HorizontalAlignment="Right"/>
+                        <TextBlock Grid.Column="5" Text="GST" Style="{StaticResource LabelStyle}" HorizontalAlignment="Right"/>
+                        <TextBlock Grid.Column="6" Text="DIS" Style="{StaticResource LabelStyle}" HorizontalAlignment="Right"/>
+                        <TextBlock Grid.Column="7" Text="TOTAL" Style="{StaticResource LabelStyle}" HorizontalAlignment="Right"/>
+                    </Grid>
+                </Border>
+
+                <ItemsControl ItemsSource="{Binding Details}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="Black" BorderThickness="0,0,0,0.5" Padding="0,2">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="35"/>
+                                        <ColumnDefinition Width="15"/>
+                                        <ColumnDefinition Width="32"/>
+                                        <ColumnDefinition Width="28"/>
+                                        <ColumnDefinition Width="22"/>
+                                        <ColumnDefinition Width="42"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="{Binding RelativeSource={RelativeSource AncestorType=ContentPresenter}, Converter={StaticResource ItemIndexConverter}}" FontSize="7.5" VerticalAlignment="Top"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding ItemName}" TextWrapping="Wrap" FontSize="8.5" FontWeight="Normal" VerticalAlignment="Top" Margin="0,0,2,0"/>
+                                    <TextBlock Grid.Column="2" Text="{Binding Packing}" FontSize="7.5" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" TextAlignment="Center"/>
+                                    <TextBlock Grid.Column="3" Text="{Binding Qty, StringFormat='{}{0:0.###}'}" FontSize="8.5" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                                    <TextBlock Grid.Column="4" Text="{Binding SPrice, StringFormat='N0'}" FontSize="8.5" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                                    <TextBlock Grid.Column="5" Text="{Binding TaxAmount, StringFormat='N0'}" FontSize="8" HorizontalAlignment="Right" VerticalAlignment="Top">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <TextBlock Grid.Column="6" Text="{Binding Discount, StringFormat='N0'}" FontSize="8" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                                    <TextBlock Grid.Column="7" Text="{Binding NetAmount, StringFormat='N0'}" FontSize="9" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <!-- Totals Section -->
+            <StackPanel HorizontalAlignment="Center" Margin="0,5" Width="220">
+                <Grid Margin="0,2">
+                    <TextBlock Text="Total Items:" Style="{StaticResource LabelStyle}" FontSize="10"/>
+                    <TextBlock Text="{Binding TotalItems, StringFormat='{}{0:0.###}'}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right" FontSize="10"/>
+                </Grid>
+                <Grid Margin="0,2">
+                    <TextBlock Text="Sub Total:" Style="{StaticResource LabelStyle}" FontSize="10"/>
+                    <TextBlock Text="{Binding SubTotal, StringFormat='N0'}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right" FontSize="10"/>
+                </Grid>
+
+                <Grid Margin="0,2">
+                    <Grid.Style>
+                        <Style TargetType="Grid">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding EffectiveTotalDiscount}" Value="0">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Style>
+                    <TextBlock Text="Discount:" Style="{StaticResource LabelStyle}" FontSize="10" Foreground="#dd0000"/>
+                    <TextBlock Text="{Binding EffectiveTotalDiscount, StringFormat='-{0:N0}'}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right" FontSize="10" Foreground="#dd0000"/>
+                </Grid>
+
+                <Grid Margin="0,2">
+                    <Grid.Style>
+                        <Style TargetType="Grid">
+                        </Style>
+                    </Grid.Style>
+                    <TextBlock Text="Incl. GST:" Style="{StaticResource LabelStyle}" FontSize="8" FontStyle="Italic"/>
+                    <TextBlock Text="{Binding TotalTax, StringFormat='N0'}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right" FontSize="8" FontStyle="Italic"/>
+                </Grid>
+                
+                <Grid Margin="0,2">
+                    <Grid.Style>
+                        <Style TargetType="Grid">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ServiceCharge}" Value="0">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Style>
+                    <TextBlock Text="Online Charges:" Style="{StaticResource LabelStyle}" FontSize="10"/>
+                    <TextBlock Text="{Binding ServiceCharge, StringFormat='N0'}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right" FontSize="10"/>
+                </Grid>
+                
+                <Border BorderBrush="Black" BorderThickness="0,1.5,0,1.5" Margin="0,10" Padding="0,8">
+                    <Grid>
+                        <TextBlock FontWeight="ExtraBold" FontSize="13" VerticalAlignment="Center">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Text" Value="TOTAL BILL"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsRefund, RelativeSource={RelativeSource AncestorType=UserControl}}" Value="True">
+                                            <Setter Property="Text" Value="TOTAL REFUND"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                        <TextBlock Text="{Binding TotalAmount, StringFormat='N0'}" FontSize="24" FontWeight="ExtraBold" HorizontalAlignment="Right"/>
+                    </Grid>
+                </Border>
+
+                <!-- "YOU SAVED" Section -->
+                <Border Background="Black" Margin="0,5,0,10" Padding="10,8">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding EffectiveTotalDiscount}" Value="0">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsRefund}" Value="True">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Text="YOU SAVED " Foreground="White" FontSize="12" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding EffectiveTotalDiscount, StringFormat='N0'}" Foreground="White" FontSize="14" FontWeight="Black"/>
+                        <TextBlock Text=" RUPEES!" Foreground="White" FontSize="12" FontWeight="Bold"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <!-- Payment Info -->
+            <StackPanel HorizontalAlignment="Center" Width="200" Margin="0,8">
+                <!-- Cash Portion -->
+                <Grid Margin="0,2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" FontSize="9" HorizontalAlignment="Center" FontWeight="Bold">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+                                <Setter Property="Text" Value="CASH PAID"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsRefund, RelativeSource={RelativeSource AncestorType=UserControl}}" Value="True">
+                                        <Setter Property="Text" Value="REFUNDED"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                    <TextBlock Grid.Column="1" Text="{Binding CashPaid, StringFormat='N0'}" FontSize="13" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </Grid>
+
+                <!-- Card/Wallet Portion -->
+                <Grid Margin="0,2">
+                    <Grid.Style>
+                        <Style TargetType="Grid">
+                            <Setter Property="Visibility" Value="Visible"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding CardPaid}" Value="0">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding PaymentMethod}" Value="Cash">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsRefund}" Value="True">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Style>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Height="0.5" Fill="Gray" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
+                    <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                        <TextBlock Text="{Binding PaymentMethod, StringFormat='{}{0} PAID'}" FontSize="9" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#444"/>
+                        <TextBlock Text="{Binding ServiceCharge, StringFormat='(Inc. Fees {0:N0})'}" FontSize="7" HorizontalAlignment="Center" Foreground="#888"/>
+                    </StackPanel>
+                    <TextBlock Grid.Column="1" Text="{Binding CardPaid, StringFormat='N0'}" FontSize="13" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+
+                <!-- Change Due -->
+                <Grid Margin="0,5">
+                    <Grid.Style>
+                        <Style TargetType="Grid">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding PaymentMethod}" Value="Cash">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding PaymentMethod}" Value="">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding PaymentMethod}" Value="{x:Null}">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsRefund, RelativeSource={RelativeSource AncestorType=UserControl}}" Value="True">
+                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Style>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="CHANGE BACK" FontSize="9" HorizontalAlignment="Center" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding ChangeDue, StringFormat='N0'}" FontSize="13" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </Grid>
+            </StackPanel>
+
+            <!-- FBR Section -->
+            <StackPanel Margin="0,10,0,0">
+                <StackPanel.Style>
+                    <Style TargetType="StackPanel">
+                    </Style>
+                </StackPanel.Style>
+                <Rectangle Height="1" Fill="Black" StrokeDashArray="2 2" SnapsToDevicePixels="True" Margin="0,5"/>
+                
+                <Grid HorizontalAlignment="Center" Width="220">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="FBR NTN:" Style="{StaticResource LabelStyle}"/>
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding FbrNtn, RelativeSource={RelativeSource AncestorType=UserControl}}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right"/>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="FBR STR:" Style="{StaticResource LabelStyle}"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding FbrStr, RelativeSource={RelativeSource AncestorType=UserControl}}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right"/>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="FBR POS ID:" Style="{StaticResource LabelStyle}"/>
+                    <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding FbrPosId, RelativeSource={RelativeSource AncestorType=UserControl}}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right"/>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Text="FBR INV NO:" Style="{StaticResource LabelStyle}"/>
+                    <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding FbrInvoiceNo, RelativeSource={RelativeSource AncestorType=UserControl}}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right"/>
+
+                    <TextBlock Grid.Row="4" Grid.Column="0" Text="GST Amount:" Style="{StaticResource LabelStyle}" FontSize="11"/>
+                    <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding TotalTax, StringFormat='Rs {0:N2}'}" Style="{StaticResource ValueStyle}" HorizontalAlignment="Right" FontSize="11" FontWeight="Bold"/>
+                </Grid>
+
+                <Grid HorizontalAlignment="Center" Margin="0,15,0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Image Grid.Column="0" Source="pack://application:,,,/Assets/fbr_logo.jpg" 
+                           Width="120" Height="120" VerticalAlignment="Center" Stretch="Uniform"/>
+                    
+                    <Image Grid.Column="2" Source="{Binding QrCodeImage, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                           Width="120" Height="120" VerticalAlignment="Center"
+                           RenderOptions.BitmapScalingMode="NearestNeighbor" Stretch="Uniform"/>
+                </Grid>
+                
+                <TextBlock Text="Verified by FBR" FontSize="8" HorizontalAlignment="Center" FontStyle="Italic"/>
+            </StackPanel>
+
+            <!-- Footer -->
+            <StackPanel Margin="0,15,0,0">
+                <TextBlock Text="*** THANK YOU ***" FontWeight="Bold" HorizontalAlignment="Center" FontSize="12"/>
+                <TextBlock Text="Exchange or Return are allowed within 2 days with receipt." FontSize="9" HorizontalAlignment="Center" Margin="0,3"/>
+                <TextBlock Text="Imported items will not be changed, returned or claimed" FontSize="8.5" HorizontalAlignment="Center" FontWeight="Bold"/>
+                
+                <Border BorderBrush="Black" BorderThickness="0,1,0,0" Margin="0,15,0,5"/>
+                <TextBlock Text="Software by Swift Developer" FontSize="8.5" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

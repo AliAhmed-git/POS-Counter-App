@@ -1,0 +1,812 @@
+{
+  "info": {
+    "_postman_id": "b23d15cb-be39-45d6-8ab4-580f53763e3b",
+    "name": "Asif Super Store",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "15934404"
+  },
+  "item": [
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "Get Updated products (Sync from cloud server to client)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405",
+                  "disabled": true
+                },
+                {
+                  "key": "bussiness_id",
+                  "value": "41",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "11",
+                  "type": "text",
+                  "uuid": "a2e35546-a233-42d4-94ec-ebad2450b86f"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}product/updated-records/download",
+              "host": [
+                "{{live}}product"
+              ],
+              "path": [
+                "updated-records",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Confirm Sync",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "1",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}product/confirm-sync",
+              "host": [
+                "{{live}}product"
+              ],
+              "path": [
+                "confirm-sync"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Product Upload Single",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "a2e35546-a233-42d4-94ec-ebad2450b86f",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}product/store",
+              "host": [
+                "{{live}}product"
+              ],
+              "path": [
+                "store"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "63",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "5",
+                  "type": "text",
+                  "uuid": "a2e35546-a233-42d4-94ec-ebad2450b86f"
+                },
+                {
+                  "key": "email",
+                  "value": "manzoor@gmail.com",
+                  "type": "text",
+                  "uuid": "c75d7c1c-a6d1-423a-9600-1d6f3e4da8fd"
+                },
+                {
+                  "key": "password",
+                  "value": "manzoor123",
+                  "type": "text",
+                  "uuid": "724245ff-50bf-4614-995f-0e80172c642c"
+                },
+                {
+                  "key": "mac_address",
+                  "value": "18:60:24:9A:F1:84",
+                  "type": "text",
+                  "uuid": "e9e525f9-3a28-4bb1-a68d-e5a1c2d300ad"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}auth/login",
+              "host": [
+                "{{live}}auth"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwb3Mtb2ZmbGluZS1saW5rIiwiYXVkIjoicG9zLW9mZmxpbmUtbGluayIsImlhdCI6MTc2MDgxMDEwNiwiZXhwIjoxNzYwODk2NTA2LCJ1c2VyX2lkIjo1NCwibmFtZSI6InRhaGlyIiwicm9sZV9pZCI6IjE5IiwiYnVzc2luZXNzX2lkIjoiNDAifQ==.wTISCN2wJKRM9JwHQKc8U6Jo8eCY/iDy1WSVx+YWbOQ=",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405",
+                  "disabled": true
+                },
+                {
+                  "key": "counter_no",
+                  "value": "2",
+                  "type": "text",
+                  "uuid": "a2e35546-a233-42d4-94ec-ebad2450b86f",
+                  "disabled": true
+                },
+                {
+                  "key": "name",
+                  "value": "tahir",
+                  "type": "text",
+                  "uuid": "c75d7c1c-a6d1-423a-9600-1d6f3e4da8fd",
+                  "disabled": true
+                },
+                {
+                  "key": "password",
+                  "value": "admin123",
+                  "type": "text",
+                  "uuid": "724245ff-50bf-4614-995f-0e80172c642c",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}auth/logout",
+              "host": [
+                "{{live}}auth"
+              ],
+              "path": [
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Fix Password",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwb3Mtb2ZmbGluZS1saW5rIiwiYXVkIjoicG9zLW9mZmxpbmUtbGluayIsImlhdCI6MTc2MDgxMDEwNiwiZXhwIjoxNzYwODk2NTA2LCJ1c2VyX2lkIjo1NCwibmFtZSI6InRhaGlyIiwicm9sZV9pZCI6IjE5IiwiYnVzc2luZXNzX2lkIjoiNDAifQ==.wTISCN2wJKRM9JwHQKc8U6Jo8eCY/iDy1WSVx+YWbOQ=",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405",
+                  "disabled": true
+                },
+                {
+                  "key": "counter_no",
+                  "value": "2",
+                  "type": "text",
+                  "uuid": "a2e35546-a233-42d4-94ec-ebad2450b86f",
+                  "disabled": true
+                },
+                {
+                  "key": "name",
+                  "value": "tahir",
+                  "type": "text",
+                  "uuid": "c75d7c1c-a6d1-423a-9600-1d6f3e4da8fd"
+                },
+                {
+                  "key": "password",
+                  "value": "junjua",
+                  "type": "text",
+                  "uuid": "724245ff-50bf-4614-995f-0e80172c642c"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}auth/fix-password",
+              "host": [
+                "{{live}}auth"
+              ],
+              "path": [
+                "fix-password"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Purchase",
+      "item": [
+        {
+          "name": "Updated Purchase Records Download",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "bussiness_id",
+                  "value": "58",
+                  "type": "text"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "1",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}purchase/updated-records/download",
+              "host": [
+                "{{live}}purchase"
+              ],
+              "path": [
+                "updated-records",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Confirm Sync",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405",
+                  "disabled": true
+                },
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "3",
+                  "type": "text",
+                  "uuid": "a2e35546-a233-42d4-94ec-ebad2450b86f"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}purchase/confirm-sync",
+              "host": [
+                "{{live}}purchase"
+              ],
+              "path": [
+                "confirm-sync"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Sale",
+      "item": [
+        {
+          "name": "Updated Sale Records",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "2",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}sale/updated-records/download",
+              "host": [
+                "{{live}}sale"
+              ],
+              "path": [
+                "updated-records",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Confirm Sync",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405",
+                  "disabled": true
+                },
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "2",
+                  "type": "text",
+                  "uuid": "a2e35546-a233-42d4-94ec-ebad2450b86f"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}sale/confirm-sync",
+              "host": [
+                "{{live}}sale"
+              ],
+              "path": [
+                "confirm-sync"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Counter",
+      "item": [
+        {
+          "name": "Counter Registration",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405",
+                  "disabled": true
+                },
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "3",
+                  "type": "text",
+                  "uuid": "a2e35546-a233-42d4-94ec-ebad2450b86f"
+                },
+                {
+                  "key": "email",
+                  "value": "ahsankhanjunjua@gmail.com",
+                  "type": "text",
+                  "uuid": "d630ee31-8aba-42aa-bc70-397073c84562"
+                },
+                {
+                  "key": "password",
+                  "value": "ahsan123",
+                  "type": "text",
+                  "uuid": "ac98bcc6-4450-4c1c-9df8-b6317543cc03"
+                },
+                {
+                  "key": "mac_address",
+                  "value": "1289363128123731289",
+                  "type": "text",
+                  "uuid": "9342fe03-eb58-4917-8913-e7891fbc1460"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{local}}counter/registration",
+              "host": [
+                "{{local}}counter"
+              ],
+              "path": [
+                "registration"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Account",
+      "item": [
+        {
+          "name": "Updated Account Records Download",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "1",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}account/updated-records/download",
+              "host": [
+                "{{live}}account"
+              ],
+              "path": [
+                "updated-records",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Confirm Sync",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE3NjAwMTY5ODYsImV4cCI6MTc5MTU1Mjk4NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsIkdpdmVuTmFtZSI6IkpvaG5ueSIsIlN1cm5hbWUiOiJSb2NrZXQiLCJFbWFpbCI6Impyb2NrZXRAZXhhbXBsZS5jb20iLCJSb2xlIjpbIk1hbmFnZXIiLCJQcm9qZWN0IEFkbWluaXN0cmF0b3IiXX0.W_VOkuJ8DRCe_Ht_vmcmsr3G9S4V7FtekeREqlYIb64",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405",
+                  "disabled": true
+                },
+                {
+                  "key": "bussiness_id",
+                  "value": "40",
+                  "type": "text",
+                  "uuid": "6a54f9df-8550-41b0-8d89-07b0313f1405"
+                },
+                {
+                  "key": "counter_no",
+                  "value": "3",
+                  "type": "text",
+                  "uuid": "a2e35546-a233-42d4-94ec-ebad2450b86f"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{live}}account/confirm-sync",
+              "host": [
+                "{{live}}account"
+              ],
+              "path": [
+                "confirm-sync"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/pdf",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\"^XA^FO50,50^ADN,36,20^FDHello World^FS^XZ\"",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://api.labelary.com/v1/printers/8dpmm/labels/1.6x0.97/0/",
+          "protocol": "http",
+          "host": [
+            "api",
+            "labelary",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "printers",
+            "8dpmm",
+            "labels",
+            "1.6x0.97",
+            "0",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Python barcode print",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\"^XA^FO50,50^A0N,40,40^FDTEST LABEL^FS^XZ\"",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:9101/print/zpl",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "9101",
+          "path": [
+            "print",
+            "zpl"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "local",
+      "value": ""
+    },
+    {
+      "key": "live",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}

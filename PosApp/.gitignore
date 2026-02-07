@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+*.user
+*.log
+*.txt
+*.db
+*.db-shm
+*.db-wal
+*_debug.png
+local.settings.json

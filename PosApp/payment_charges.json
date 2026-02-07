@@ -1,0 +1,77 @@
+[
+    {
+        "Method": "Cash",
+        "ChargePercentage": 0.0,
+        "TaxPercentage": 0.0
+    },
+    {
+        "Method": "Raast",
+        "ChargePercentage": 0.0,
+        "TaxPercentage": 0.0
+    },
+    {
+        "Method": "JazzCash",
+        "ChargePercentage": 0.8,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "EasyPaisa",
+        "ChargePercentage": 0.8,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "Alfalah Card",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "HBL Card",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "MCB Card",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "UBL Card",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "Meezan Card",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "Allied Bank Card",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "Bank Al Habib Card",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "Faysal Bank Card",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "SadaPay",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "Nayapay",
+        "ChargePercentage": 1.5,
+        "TaxPercentage": 13.0
+    },
+    {
+        "Method": "Other Bank Card",
+        "ChargePercentage": 2.0,
+        "TaxPercentage": 13.0
+    }
+]

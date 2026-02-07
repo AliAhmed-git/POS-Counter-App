@@ -1,0 +1,73 @@
+<Window x:Class="PosApp.Desktop.Views.DenominationDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cash Declaration" Height="650" Width="500"
+        WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        Background="#0A0A0A" Foreground="White"
+        WindowStyle="SingleBorderWindow">
+    <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Margin="0,0,0,30">
+                <TextBlock Text="CASH DECLARATION" FontSize="24" FontWeight="Black" Foreground="#ff8c00" HorizontalAlignment="Left"/>
+                <TextBlock Text="Please enter physical counts for each denomination." FontSize="12" Foreground="#888888" Margin="0,5,0,0"/>
+            </StackPanel>
+
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0,0,-10,0" Padding="0,0,10,0">
+                <ItemsControl x:Name="DenomList">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="#1A1A1A" Margin="0,4" Padding="15,10" CornerRadius="4">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="120"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding Value, StringFormat='{}{0:N0}'}" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                                    <TextBlock Grid.Column="1" Text="X" VerticalAlignment="Center" Margin="20,0" Foreground="#555555" FontWeight="Bold"/>
+                                    <TextBox Grid.Column="2" x:Name="CountBox" Text="{Binding Count, UpdateSourceTrigger=PropertyChanged}" 
+                                             FontSize="20" Padding="10,5" Background="#252526" Foreground="#ff8c00" BorderThickness="0"
+                                             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                             PreviewTextInput="NumberValidationTextBox"
+                                             GotFocus="TextBox_GotFocus"
+                                             FontWeight="Bold" CaretBrush="#ff8c00"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+
+            <StackPanel Grid.Row="2" Margin="0,20,0,0">
+                <TextBlock Text="ADDTIONAL NOTES / REMARKS" Foreground="#888888" FontSize="11" FontWeight="Bold" Margin="0,0,0,8"/>
+                <TextBox x:Name="NotesBox" Height="80" TextWrapping="Wrap" AcceptsReturn="True" 
+                         Background="#1A1A1A" Foreground="White" BorderThickness="1" BorderBrush="#333333" Padding="10"
+                         FontSize="14" VerticalContentAlignment="Top"/>
+            </StackPanel>
+
+            <UniformGrid Grid.Row="3" Columns="2" Margin="0,30,0,0">
+                <Button Content="CANCEL" Click="Cancel_Click" Height="50" Margin="0,0,10,0" 
+                        Background="#333333" Foreground="White" BorderThickness="0" FontSize="14" FontWeight="Bold">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Content="CONFIRM &amp; PRINT" Click="Confirm_Click" Height="50" 
+                        Background="#ff8c00" Foreground="White" FontWeight="Black" BorderThickness="0" FontSize="14">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </UniformGrid>
+        </Grid>
+</Window>

@@ -1,0 +1,106 @@
+<Window x:Class="PosApp.Desktop.Views.RefundDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Refund Items" Height="600" Width="800"
+        Background="#1a1a1a" WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize" WindowStyle="None">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock Text="{Binding HeaderText}" FontSize="20" FontWeight="Bold" Foreground="#ff8c00"/>
+            <TextBlock Text="{Binding DateText}" FontSize="14" Foreground="#888888" Margin="0,5,0,0"/>
+        </StackPanel>
+
+        <!-- Age Warning -->
+        <Border Grid.Row="1" Background="#aa3333" Padding="10" Margin="0,0,0,10"
+                Visibility="{Binding ShowAgeWarning, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <TextBlock Text="{Binding AgeWarningText}" FontSize="14" FontWeight="Bold" 
+                       Foreground="White" TextWrapping="Wrap"/>
+        </Border>
+
+        <!-- Items DataGrid -->
+        <Border Grid.Row="2" BorderBrush="#333333" BorderThickness="1" Margin="0,0,0,10">
+            <DataGrid ItemsSource="{Binding Items}" AutoGenerateColumns="False" 
+                      CanUserAddRows="False" CanUserDeleteRows="False" 
+                      Background="#1a1a1a" Foreground="White" 
+                      GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#333333"
+                      HeadersVisibility="Column" RowHeaderWidth="0"
+                      SelectionMode="Single" IsReadOnly="False">
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#2d2d2d"/>
+                        <Setter Property="Foreground" Value="#ff8c00"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Padding" Value="10,5"/>
+                        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                        <Setter Property="BorderBrush" Value="#333333"/>
+                    </Style>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsSelected}" Value="False">
+                                <Setter Property="Opacity" Value="0.4"/>
+                            </DataTrigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#2d2d2d"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="Padding" Value="10,5"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Foreground" Value="White"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Select" Width="60">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsSelected, UpdateSourceTrigger=PropertyChanged}" 
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Item Name" Binding="{Binding ItemName}" Width="*"/>
+                    <DataGridTextColumn Header="Packing" Binding="{Binding Packing}" Width="100"/>
+                    <DataGridTextColumn Header="Price" Binding="{Binding SPrice, StringFormat='{}{0:N0}'}" Width="100"/>
+                    <DataGridTextColumn Header="Qty" Binding="{Binding Qty, StringFormat='{}{0:0.###}'}" Width="80"/>
+                    <DataGridTextColumn Header="Amount" Binding="{Binding NetAmount, StringFormat='{}{0:N0}'}" Width="120"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+        <!-- Refund Total -->
+        <Border Grid.Row="3" Background="#2d2d2d" Padding="15" Margin="0,0,0,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Total Refund Amount:" FontSize="18" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1" Text="{Binding RefundTotal, StringFormat='Rs. {0:N0}'}" 
+                           FontSize="24" FontWeight="Black" Foreground="#ff8c00" VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <!-- Action Buttons -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="CANCEL" Width="120" Height="40" Margin="0,0,10,0"
+                    Background="#333333" Foreground="White" FontSize="14" FontWeight="Bold"
+                    Click="Cancel_Click" Cursor="Hand"/>
+            <Button Content="CONFIRM REFUND" Width="180" Height="40"
+                    Background="#aa3333" Foreground="White" FontSize="14" FontWeight="Bold"
+                    Click="Confirm_Click" Cursor="Hand"
+                    IsEnabled="{Binding HasSelectedItems}"/>
+        </StackPanel>
+    </Grid>
+</Window>
